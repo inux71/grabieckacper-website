@@ -1,3 +1,3 @@
 export default function Comment({ text }: { text: string }) {
-  return <span>// {text}</span>;
+  return <span>{`// ${text}`}</span>;
 }
