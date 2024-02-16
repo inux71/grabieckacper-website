@@ -1,3 +1,5 @@
+import Technology from "./technology";
+
 export default function Work({
   position,
   company,
@@ -23,11 +25,7 @@ export default function Work({
 
       <div className="flex flex-wrap justify-start items-start pt-2">
         {technologies.map((technology: string, index: number) => {
-          return (
-            <div key={index} className="flex text-sm bg-[#222] p-1 m-1 rounded">
-              <span>{technology}</span>
-            </div>
-          );
+          return <Technology key={index} name={technology} />;
         })}
       </div>
     </div>
