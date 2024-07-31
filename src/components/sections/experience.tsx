@@ -19,7 +19,13 @@ export default function Experience() {
         company="POL-EKO"
         period={["July 2023", "September 2023"]}
         description="Creating web application and REST-API interface for .NET platform during 3 months long internship."
-        technologies={["C#", "ASP.NET Core", "Entity Framework Core", "Blazor"]}
+        technologies={[
+          "C#",
+          "ASP.NET Core",
+          "Entity Framework Core",
+          "Blazor",
+          "PostgreSQL",
+        ]}
       />
     </section>
   );
