@@ -15,13 +15,13 @@ export default function About() {
     >
       <>
         <h1 className="text-4xl font-bold">Kacper Grabiec</h1>
-        <h5 className="text-lg">full-stack developer</h5>
+        <h5 className="text-lg">Mobile Developer | Backend Developer</h5>
       </>
 
       <br></br>
 
       <div className="flex justify-center items-center">
-        <Social icon={FaGithub} url="https://github.com/Inux71/" />
+        <Social icon={FaGithub} url="https://github.com/inux71/" />
         <Social
           icon={FaLinkedin}
           url="https://www.linkedin.com/in/kacper-grabiec-878190202/"
@@ -39,7 +39,7 @@ export default function About() {
       <br></br>
 
       <Link
-        href="/files/CV.pdf"
+        href="/files/CV_Kacper_Grabiec.pdf"
         target="_blank"
         download={true}
         className="hover:font-extrabold"

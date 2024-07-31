@@ -1,6 +1,5 @@
 import { FaMobileAlt, FaServer } from "react-icons/fa";
 import Skill from "../skill";
-import { FaCode } from "react-icons/fa6";
 
 export default function Skills() {
   return (
@@ -8,18 +7,6 @@ export default function Skills() {
       id="skills"
       className="min-h-screen flex flex-col lg:flex-row justify-center items-center"
     >
-      <Skill
-        title="Web development"
-        icon={FaCode}
-        description={
-          <p className="text-center">
-            Creating web applications using{" "}
-            {<span className="text-react">{`React`}</span>} and{" "}
-            {<span className="text-typescript">TypeScript</span>}.
-          </p>
-        }
-      />
-
       <Skill
         title="Mobile development"
         icon={FaMobileAlt}
