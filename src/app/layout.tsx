@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth no-scrollbar" lang="en">
       <body className={jetBrainsMono.className}>{children}</body>
     </html>
   );

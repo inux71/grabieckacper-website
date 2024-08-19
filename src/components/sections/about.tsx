@@ -27,7 +27,7 @@ export default function About() {
 
       <div className="flex flex-col justify-center items-center w-1/2">
         <h1 className="text-4xl font-bold">Kacper Grabiec</h1>
-        <h5 className="text-lg">Mobile Developer</h5>
+        <h5 className="text-lg">Mobile Developer | Backend Developer</h5>
 
         <br></br>
 
@@ -38,7 +38,8 @@ export default function About() {
           <span className="font-bold">SwiftUI</span>,{" "}
           <span className="font-bold">Java Spring Boot</span> and{" "}
           <span className="font-bold">ASP.NET Core</span>. My goal is to work as
-          a Mobile Developer.
+          a <span className="font-bold">Mobile Developer</span> or{" "}
+          <span className="font-bold">Backend Developer</span>.
         </p>
 
         <br></br>
