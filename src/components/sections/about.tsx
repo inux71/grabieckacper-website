@@ -4,48 +4,62 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa6";
+import Image from "next/image";
 import Social from "../social";
-import Link from "next/link";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center items-center"
+      className="flex flex-col lg:flex-row justify-center items-center min-h-screen w-4/5"
     >
-      <>
-        <h1 className="text-4xl font-bold">Kacper Grabiec</h1>
-        <h5 className="text-lg">Mobile Developer | Backend Developer</h5>
-      </>
+      <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
+        <Image
+          src="/images/profile.jpg"
+          width={300}
+          height={300}
+          alt="Profile picture."
+          className="rounded-md"
+        />
 
-      <br></br>
-
-      <div className="flex justify-center items-center">
-        <Social icon={FaGithub} url="https://github.com/inux71/" />
-        <Social
-          icon={FaLinkedin}
-          url="https://www.linkedin.com/in/kacper-grabiec-878190202/"
-        />
-        <Social
-          icon={FaFacebookMessenger}
-          url="https://www.m.me/kacpergrabiec01"
-        />
-        <Social
-          icon={FaInstagram}
-          url="https://www.instagram.com/kacpergrabiec_/"
-        />
+        <br></br>
       </div>
 
-      <br></br>
+      <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
+        <h1 className="text-4xl font-bold">Kacper Grabiec</h1>
+        <h5 className="text-lg">Mobile Developer | Backend Developer</h5>
 
-      <Link
-        href="/files/CV_Kacper_Grabiec.pdf"
-        target="_blank"
-        download={true}
-        className="hover:font-extrabold"
-      >
-        {"[get CV]"}
-      </Link>
+        <br></br>
+
+        <p className="text-center">
+          I am a graduate of IT engineering studies specializing in creating
+          mobile applications. I have programming skills in{" "}
+          <span className="font-bold">Kotlin Jetpack Compose</span>,{" "}
+          <span className="font-bold">SwiftUI</span>,{" "}
+          <span className="font-bold">Java Spring Boot</span> and{" "}
+          <span className="font-bold">ASP.NET Core</span>. My goal is to work as
+          a <span className="font-bold">Mobile Developer</span> or{" "}
+          <span className="font-bold">Backend Developer</span>.
+        </p>
+
+        <br></br>
+
+        <div className="flex justify-center items-center">
+          <Social icon={FaGithub} url="https://github.com/inux71/" />
+          <Social
+            icon={FaLinkedin}
+            url="https://www.linkedin.com/in/kacper-grabiec-878190202/"
+          />
+          <Social
+            icon={FaFacebookMessenger}
+            url="https://www.m.me/kacpergrabiec01"
+          />
+          <Social
+            icon={FaInstagram}
+            url="https://www.instagram.com/kacpergrabiec_/"
+          />
+        </div>
+      </div>
     </section>
   );
 }

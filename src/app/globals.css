@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    background-color: #000;
-    color: #fff;
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: 0;  
+    }
 }
