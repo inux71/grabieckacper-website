@@ -18,11 +18,11 @@ export default function Project({
 }) {
   return (
     <div
-      className={`flex ${
-        reverse === true ? "flex-row-reverse" : "flex-row"
+      className={`flex flex-col ${
+        reverse === true ? "lg:flex-row-reverse" : "lg:flex-row"
       } justify-center items-center w-4/5 min-h-screen`}
     >
-      <div className="flex flex-col justify-center items-center w-1/2 mx-4">
+      <div className="flex flex-col justify-center items-center w-full lg:w-1/2 lg:mx-4">
         <h2 className="text-3xl font-bold">{title}</h2>
 
         <br></br>
@@ -37,7 +37,7 @@ export default function Project({
 
         <br></br>
 
-        <div className="flex flex-wrap justify-start items-center w-full">
+        <div className="flex flex-wrap justify-center lg:justify-start items-center w-full">
           {technologies.map((technology, index) => {
             return <Technology key={index} name={technology} />;
           })}
@@ -45,7 +45,7 @@ export default function Project({
 
         <br></br>
 
-        <div className="flex flex-col justify-center items-start w-full">
+        <div className="flex flex-col justify-center items-center lg:items-start w-full">
           {links !== undefined
             ? Object.entries(links).map(([key, value], index) => (
                 <a key={index} href={value} target="_blank">
@@ -56,7 +56,7 @@ export default function Project({
         </div>
       </div>
 
-      <div className="flex justify-start items-center w-1/2 overflow-x-scroll mx-4 no-scrollbar">
+      <div className="flex justify-start items-center w-full lg:w-1/2 overflow-x-scroll lg:mx-4 my-8 lg:my-0 no-scrollbar">
         {images.map((image, index) => (
           <Image
             key={index}

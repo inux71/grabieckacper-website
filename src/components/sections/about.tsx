@@ -11,9 +11,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex justify-center items-center min-h-screen w-4/5"
+      className="flex flex-col lg:flex-row justify-center items-center min-h-screen w-4/5"
     >
-      <div className="flex flex-col justify-center items-center w-1/2">
+      <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
         <Image
           src="/images/profile.jpg"
           width={300}
@@ -25,13 +25,13 @@ export default function About() {
         <br></br>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-1/2">
+      <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
         <h1 className="text-4xl font-bold">Kacper Grabiec</h1>
         <h5 className="text-lg">Mobile Developer | Backend Developer</h5>
 
         <br></br>
 
-        <p>
+        <p className="text-center">
           I am a graduate of IT engineering studies specializing in creating
           mobile applications. I have programming skills in{" "}
           <span className="font-bold">Kotlin Jetpack Compose</span>,{" "}

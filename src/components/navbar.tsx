@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-center items-center w-full fixed top-0 left-0 right-0 z-10 py-4 bg-white">
-      <div className="flex justify-end items-center w-2/3">
+      <div className="flex justify-center lg:justify-end items-center w-2/3">
         <ul>
           <li>
             <Link href="#about" className={liClassName}>
