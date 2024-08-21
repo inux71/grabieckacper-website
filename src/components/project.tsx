@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Technology from "./technology";
 
 export default function Project({
   title,
@@ -38,14 +39,7 @@ export default function Project({
 
         <div className="flex flex-wrap justify-start items-center w-full">
           {technologies.map((technology, index) => {
-            return (
-              <span
-                key={index}
-                className="font-bold px-1 bg-black text-white mx-1 rounded-md"
-              >
-                {technology}
-              </span>
-            );
+            return <Technology key={index} name={technology} />;
           })}
         </div>
 
