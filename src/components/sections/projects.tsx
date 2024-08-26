@@ -41,6 +41,23 @@ export default function Projects() {
       />
 
       <Project
+        title="Talk Talk"
+        description="A mobile talk app design for android and iOS (in progress)."
+        technologies={["Kotlin", "Jetpack Compose"]}
+        images={[
+          "/images/projects/talk_talk/android/login_view.png",
+          "/images/projects/talk_talk/android/register_view.png",
+          "/images/projects/talk_talk/android/talk_list_view.png",
+          "/images/projects/talk_talk/android/talk_view.png",
+          "/images/projects/talk_talk/android/new_talk_view.png",
+          "/images/projects/talk_talk/android/new_group_talk_view.png",
+          "/images/projects/talk_talk/android/profile_view.png",
+          "/images/projects/talk_talk/android/settings_view.png",
+        ]}
+        links={{ "source code": "https://github.com/inux71/talk-talk" }}
+      />
+
+      <Project
         title="LibGame"
         description="A mobile application which allows you to manage games you play or played. You can search the game and add it to your list."
         technologies={[
@@ -62,6 +79,7 @@ export default function Projects() {
           "android source code": "https://github.com/inux71/lib-game",
           "iOS source code": "https://github.com/inux71/lib-game-for-ios",
         }}
+        reverse
       />
 
       <Project
@@ -81,7 +99,6 @@ export default function Projects() {
             "https://github.com/inux71/android-weather-widget",
           "iOS source code": "https://github.com/inux71/ios-weather-app",
         }}
-        reverse
       />
     </section>
   );
