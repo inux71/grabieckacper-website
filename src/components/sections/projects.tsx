@@ -42,8 +42,8 @@ export default function Projects() {
 
       <Project
         title="Talk Talk"
-        description="A mobile talk app design for android and iOS (in progress)."
-        technologies={["Kotlin", "Jetpack Compose"]}
+        description="A mobile talk app design for android and iOS."
+        technologies={["Kotlin", "Jetpack Compose", "Swift", "SwiftUI"]}
         images={[
           "/images/projects/talk_talk/android/login_view.png",
           "/images/projects/talk_talk/android/register_view.png",
@@ -53,6 +53,14 @@ export default function Projects() {
           "/images/projects/talk_talk/android/new_group_talk_view.png",
           "/images/projects/talk_talk/android/profile_view.png",
           "/images/projects/talk_talk/android/settings_view.png",
+          "/images/projects/talk_talk/ios/login_view.png",
+          "/images/projects/talk_talk/ios/register_view.png",
+          "/images/projects/talk_talk/ios/talk_list_view.png",
+          "/images/projects/talk_talk/ios/talk_view.png",
+          "/images/projects/talk_talk/ios/new_talk_view.png",
+          "/images/projects/talk_talk/ios/new_group_talk_view.png",
+          "/images/projects/talk_talk/ios/profile_view.png",
+          "/images/projects/talk_talk/ios/settings_view.png",
         ]}
         links={{ "source code": "https://github.com/inux71/talk-talk" }}
       />
